@@ -1,6 +1,7 @@
 const request = require("postman-request");
 
 function getMovies(movieSearch, callback) {
+    const apiKey = process.env.TMDB_API_KEY;
     const url = 'https://api.themoviedb.org/3/search/movie?query=' + encodeURIComponent(movieSearch) + '&include_adult=false&language=en-US&page=1';
     const options = {
         url,
