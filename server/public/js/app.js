@@ -1,7 +1,7 @@
 
 const form = document.querySelector('form');
 const search = document.querySelector('input');
-const message = document.querySelector('#message-1');
+const message = document.querySelector('.message');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -23,9 +23,11 @@ form.addEventListener('submit', async (e) => {
             message.textContent = ''; // Clear the loading message
             data.body.results.forEach((movie) => {
                 message.innerHTML += `
-                
+                <div class=moviesOutput>
+                  <p class='movieTitle'>${movie.title}</p>
               <img src="https://image.tmdb.org/t/p/w200${movie.poster_path}" alt="${movie.title}">
-                <p>${movie.title}</p>
+            </div>
+         
                 
         `;
             });
