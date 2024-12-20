@@ -4,7 +4,7 @@ const hbs = require("hbs");
 const getMovies = require("./utils/movie");
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 // Define paths for Express config
 const publicDirectory = path.join(__dirname, "./public");
