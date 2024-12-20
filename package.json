@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.21.2",
+    "hbs": "^4.2.0",
+    "i": "^0.3.7",
+    "npm": "^11.0.0",
+    "postman-request": "^2.88.1-postman.40"
+  },
+  "name": "moviedb2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
